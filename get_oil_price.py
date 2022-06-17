@@ -8,7 +8,7 @@ def get_price_from_json():
         data = resp.json()
     except Exception:
         return 'no price, problem with site?'
-    return str(data['rows'][-1]['c'][-1]['v']) + 'p'
+    return str(data['rows'][-1]['c'][-1]['v'])
 
 
 def get_price_from_soup():
@@ -35,7 +35,7 @@ def get_price_from_soup():
 
 
 def main():
-    print(get_price_from_json())
+    print(get_price_from_json() + 'p')
 
 if __name__ == '__main__':
     main()
