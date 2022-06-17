@@ -2,7 +2,24 @@
 
 A small script to fetch current daily oil price via Boilerjuice.
 
-It uses requests to `priceChart.inc.php` with query params:
+## Dependencies
+
+* python3
+* requests
+
+Note: Using get_price_from_soup() will require BeautifulSoup and selenium.
+
+## Run
+
+```
+$ python get_oil_price.py
+114.69p
+
+```
+
+## Query params
+
+Requests to `priceChart.inc.php` require the following query parameters
 
 ### Area `a`
 
